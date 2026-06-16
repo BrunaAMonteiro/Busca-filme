@@ -14,6 +14,7 @@ bttn.addEventListener("click", function () {
 
                 
                 const card = document.createElement("div");
+                card.classList.add("card");
                 const img = document.createElement("img");
                 img.src = `https://image.tmdb.org/t/p/w500${result.poster_path}`;
                 const titulo = document.createElement("p");
