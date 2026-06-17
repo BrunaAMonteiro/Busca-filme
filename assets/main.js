@@ -11,12 +11,14 @@ bttn.addEventListener("click", function () {
         .then(data => {
             results.innerHTML = ""; // Limpa os resultados anteriores
             data.results.forEach(result => {
-
+                if (!result.poster_path) return; // se não tiver imagem, ignora
                 
                 const card = document.createElement("div");
                 card.classList.add("card");
-                const img = document.createElement("img");
+
+                const img = document.createElement("img"); 
                 img.src = `https://image.tmdb.org/t/p/w500${result.poster_path}`;
+
                 const titulo = document.createElement("p");
                 titulo.textContent = result.title || result.name;
                 

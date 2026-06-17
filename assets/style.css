@@ -1,10 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f0e8;
+    color: #3a5a8c;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #5b8fc9;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    color: #f5f0e8;
+    font-size: 24px;
+}
+
+#searchInput {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    background: #f5f0e8;
+    color: #3a5a8c;
+    font-size: 14px;
+    outline: none;
+}
+
+#searchButton {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #3a5a8c;
+    color: #f5f0e8;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#searchButton:hover {
+    background: #2a4a7c;
+}
+
 #results {
+    padding: 24px 32px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 16px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #d6cfc0;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card img {
     width: 100%;
-    border-radius: 8px;
+    display: block;
+}
+
+.card p {
+    padding: 8px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3a5a8c;
 }
