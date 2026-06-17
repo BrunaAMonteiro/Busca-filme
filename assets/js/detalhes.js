@@ -25,7 +25,10 @@ function fetchDetails() {
                     <p class="generos">${generos}</p>
                 </div>
                 <div class="right">
-                    <div class="nota-box"> ${nota}</div>
+                    <div class="nota-box">
+                        <span>${nota}</span>
+                        <span>nota</span>
+                    </div>
                     <div class="descricao-box">
                         <span class="label"> Descrição</span>
                         <p class="descricao">${descricao}</p>
