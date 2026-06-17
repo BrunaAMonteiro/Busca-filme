@@ -7,7 +7,7 @@
 body {
     background-color: #f5f0e8;
     color: #3a5a8c;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -21,6 +21,19 @@ header {
 h1 {
     color: #f5f0e8;
     font-size: 24px;
+}
+
+
+a {
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 #searchInput {
@@ -78,4 +91,117 @@ h1 {
     font-size: 13px;
     font-weight: 500;
     color: #3a5a8c;
+}
+
+.details-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    padding: 40px;
+    margin-top: -40px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 280px;
+}
+
+.left img {
+    width: 280px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.25);
+    transform: translateY(-4px);
+}
+
+.left h2 {
+    font-size: 22px;
+    color: #3a5a8c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.left .generos {
+    font-size: 12px;
+    color: #7a9abf;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: flex-start;
+    margin-top: 150px;
+}
+
+.nota-box {
+    background: #fff;
+    border: 2px solid #d6cfc0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3a5a8c;
+    text-align: center;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao-box {
+    background: #fff;
+    border: 2px solid #d6cfc0;
+    border-radius: 12px;
+    padding: 10px 14px;
+    max-width: 200px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.descricao-box .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3a5a8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.descricao {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.3s ease;
+    margin-top: 0;
+}
+
+.descricao-box:hover .descricao {
+    max-height: 400px;
+    margin-top: 10px;
+}
+
+header a {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 2px solid #f5f0e8;
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+header a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
