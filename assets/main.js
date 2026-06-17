@@ -3,9 +3,7 @@ const input = document.getElementById("searchInput");
 const results = document.getElementById("results");
 
 
-bttn.addEventListener("click", function () {
-
-
+function buscar(){
     fetch(`https://api.themoviedb.org/3/search/multi?api_key=92ef8d0e552aa54022ede7c7b1244305&query=${input.value}&language=pt-BR`)
         .then(res => res.json())
         .then(data => {
@@ -29,4 +27,12 @@ bttn.addEventListener("click", function () {
             });
 
         })
+}
+
+bttn.addEventListener("click", buscar); 
+
+input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        buscar();
+    }
 });
