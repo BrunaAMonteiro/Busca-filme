@@ -1,3 +1,4 @@
+
 const bttn = document.getElementById("searchButton");
 const input = document.getElementById("searchInput");
 const results = document.getElementById("results");
@@ -14,6 +15,12 @@ function buscar(){
                 const card = document.createElement("div");
                 card.classList.add("card");
 
+                card.addEventListener("click", function () {
+                    localStorage.setItem("midiaType",result.media_type);
+                    localStorage.setItem("midiaId", result.id);
+                    window.location.href = "detalhes.html";
+                });
+
                 const img = document.createElement("img"); 
                 img.src = `https://image.tmdb.org/t/p/w500${result.poster_path}`;
 
@@ -23,6 +30,7 @@ function buscar(){
                 card.appendChild(titulo);
                 card.appendChild(img);
                 results.appendChild(card);
+
 
             });
 
