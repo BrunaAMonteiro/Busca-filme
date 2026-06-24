@@ -10,14 +10,25 @@
 </head>
 <body>
     <header>
+    <div class="brand">
         <img src="img/snorlax.png" alt="Logo" class="logo">
         <h1>Busca Filmes</h1>
-        <input type="text" id="searchInput" placeholder="Digite o nome do filme...">
+    </div>
+    <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Buscar filme ou série...">
         <button id="searchButton">Buscar</button>
-    </header>
-    <main>
+    </div>
+</header>
+<main>
+    <div class="hero">
+        <h2>O que você quer assistir hoje?</h2>
+        <p>Busque filmes e séries e descubra novidades</p>
+    </div>
+    <div class="section">
+        <p class="section-title">Resultados</p>
         <div id="results"></div>
-    </main>
+    </div>
+</main>
     <script src="js/main.js"></script>
 </body>
 </html>

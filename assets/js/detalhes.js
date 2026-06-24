@@ -18,24 +18,29 @@ function fetchDetails() {
             const poster = `https://image.tmdb.org/t/p/w500${data.poster_path}`;
 
             details.innerHTML = `
-                <div class="details-container">
-                    <div class="left">
-                    <img src="${poster}" alt="${nome} poster">
-                    <h2>${nome}</h2>
-                    <p class="generos">${generos}</p>
-                </div>
-                <div class="right">
-                    <div class="nota-box">
-                        <span>${nota}</span>
-                        <span>nota</span>
-                    </div>
-                    <div class="descricao-box">
-                        <span class="label"> Descrição</span>
-                        <p class="descricao">${descricao}</p>
-                        </div>
-                    </div>
-                </div>
-                `;
+    <div class="details-container">
+        <div class="left">
+            <img src="${poster}" alt="${nome}">
+        </div>
+        <div class="info">
+            <div>
+                <p class="info-title">${nome}</p>
+                <p class="info-genre">${generos}</p>
+            </div>
+            <div class="badges">
+                ${data.genres.map(g => `<span class="badge">${g.name}</span>`).join("")}
+            </div>
+            <div class="nota-row">
+                <div class="nota-circle">${nota}</div>
+                <p class="nota-text">Avaliação dos usuários</p>
+            </div>
+            <div class="descricao-box">
+                <span class="label">Descrição</span>
+                <p class="descricao">${descricao}</p>
+            </div>
+        </div>
+    </div>
+`;
         })
 }
 
