@@ -212,9 +212,15 @@ header a:hover {
     overflow: hidden;
     transition: max-height 0.4s ease, margin-top 0.3s ease;
     margin-top: 0;
+    scrollbar-width: none;
 }
 
 .descricao-box:hover .descricao {
-    max-height: 300px;
+    max-height: 200px;
+    overflow-y: auto;
     margin-top: 8px;
+}
+
+.descricao::-webkit-scrollbar {
+    display: none;
 }
