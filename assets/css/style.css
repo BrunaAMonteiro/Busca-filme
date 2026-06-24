@@ -109,6 +109,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #results {
