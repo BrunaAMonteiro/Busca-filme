@@ -12,7 +12,7 @@ body {
 
 /* HEADER */
 header {
-    background: #f0ebe0;
+    background: #4a7fb5;;
     padding: 20px 40px;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ header {
 h1 {
     font-size: 18px;
     font-weight: 700;
-    color: #2a5080;
+    color: #f0ebe0;
 }
 
 .search-wrap {
@@ -80,20 +80,20 @@ h1 {
 
 /* HERO */
 .hero {
-    background: #4a7fb5;
+    background: linear-gradient(180deg, #a9bdf8, #f0ebe0);
     padding: 48px 40px;
     text-align: center;
 }
 
 .hero h2 {
-    color: #f0ebe0;
+    color: #4a7fb5; /* #f0ebe0 letra*/
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .hero p {
-    color: #c8dff0;
+    color: #6d9ec4;
     font-size: 15px;
 }
 
@@ -156,7 +156,7 @@ h1 {
 
 /* DETAIL */
 .detail-header {
-    background: #f0ebe0;
+    background: #4a7fb5;
     padding: 20px 40px;
     display: flex;
     align-items: center;
